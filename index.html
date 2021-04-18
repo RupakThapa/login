@@ -4,17 +4,23 @@
     <script>
         activ = window.setInterval("Farbe()", 100);
         farbe=1;
+        var txt = "a";
         
         function Farbe() {
             if(farbe==1) {
                 document.bgColor="FFFF00";
                 farbe=2;
+                 txt += "a";
+               
+document.getElementById("demo").innerHTML = txt;
             }else {
                 document.bgColor="FF0000";
                 farbe=1;
+                 txt += "a";
+                 document.getElementById("demo").innerHTML = txt;
             }
             
-            alert("ok");
+            
         }
 
         function erneut(){
@@ -25,6 +31,7 @@
     </script>
 </head>
 <body>
+    <p id="demo"></p>
     <h1>Unclosable Window</h1>
 </body>
 </html>
